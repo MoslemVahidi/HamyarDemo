@@ -71,7 +71,7 @@ function doTrade(button) {
 
   button.classList.add('loading');
   button.textContent = 'در حال انجام...';
-  showToast `${actionText} ${name} در حال انجام است...`;
+  showToast(`${actionText} ${name} در حال انجام است...`);
 
   setTimeout(() => {
     button.classList.remove('loading');
