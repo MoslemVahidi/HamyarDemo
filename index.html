@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FRC Homepage</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero">
+      <div class="status-bar">
+        <span>12:30</span>
+        <span class="camera-dot"></span>
+        <span class="status-icons">WiFi 4G</span>
+      </div>
+      <div class="top-actions">
+        <div class="action-group">
+          <button class="square-btn" aria-label="settings">⚙</button>
+          <button class="square-btn notification" aria-label="notifications">!</button>
+        </div>
+        <button class="avatar-small">SA</button>
+      </div>
+      <div class="balance-slider">
+        <button class="chevron">‹</button>
+        <div class="balance-center">
+          <div class="currency-line"><span class="down-arrow">↓</span> IRR</div>
+          <div class="amount">0</div>
+        </div>
+        <button class="chevron">›</button>
+      </div>
+      <button class="all-assets"><span>←</span> همه دارایی‌ها</button>
+    </section>
+
+    <section class="quick-card">
+      <button class="quick-row">
+        <span class="circle-arrow">←</span>
+        <span class="quick-title">مانده نهایی</span>
+        <span class="quick-icon wallet-icon"></span>
+      </button>
+      <div class="divider"></div>
+      <button class="quick-row">
+        <span class="circle-arrow">←</span>
+        <span class="quick-title">صورتحساب</span>
+        <span class="quick-icon statement-icon"></span>
+      </button>
+    </section>
+
+    <section class="services-section">
+      <h2>خدمات</h2>
+      <div class="services-card">
+        <button class="service-item"><span class="service-icon user-icon"></span><span>مشخصات</span></button>
+        <button class="service-item"><span class="service-icon payment-icon"></span><span>دستور پرداخت</span></button>
+        <button class="service-item deal-open" data-type="currency"><span class="service-icon currency-icon"></span><span>معامله ارز</span></button>
+        <button class="service-item deal-open" data-type="gold"><span class="service-icon gold-icon"></span><span>معامله طلا</span></button>
+        <button class="service-item"><span class="service-icon rate-icon"></span><span>نرخ</span></button>
+        <button class="service-item"><span class="service-icon apps-icon"></span><span>همه خدمات</span></button>
+      </div>
+    </section>
+
+    <section class="deal-panel" id="dealPanel" aria-hidden="true">
+      <div class="deal-sheet">
+        <div class="deal-header">
+          <div><h3 id="dealTitle">معامله ارز</h3><p id="dealSubtitle">قیمت‌های خرید و فروش لحظه‌ای</p></div>
+          <button class="close-btn" id="closeDeal">×</button>
+        </div>
+        <div class="deal-list" id="dealList"></div>
+      </div>
+    </section>
+
+    <div class="toast" id="toast"></div>
+
+    <nav class="bottom-nav">
+      <a class="nav-item active" href="#"><span class="nav-home"></span><b>خانه</b></a>
+      <a class="nav-item" href="#"><span class="nav-chat"></span><b>گفت و گو</b></a>
+      <a class="nav-item" href="#"><span class="nav-download"></span><b>دانلود</b></a>
+      <a class="nav-item" href="#"><span class="nav-menu"></span><b>حساب‌ها</b></a>
+    </nav>
+  </main>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
